@@ -1,10 +1,11 @@
 import './App.css'
+import FeaturedArea from './components/FeaturedArea/FeaturedArea';
 
 function App() {
 
   return (
     <>
-      <p>Bonjour PortFolio</p>
+      <FeaturedArea/>
     </>
   )
 }
