@@ -1,6 +1,6 @@
 import FacebookIcon from "../lib/icons/Facebook.svg";
-import TumblrIcon from "../lib/icons/Tumblr.svg";
-import TwitterIcon from "../lib/icons/Twitter.svg";
+import Github from "../lib/icons/Github.svg";
+import Linkedin from "../lib/icons/Linkedin.svg";
 
 export const social = [
   {
@@ -11,13 +11,13 @@ export const social = [
     socialTitle: "Facebook",
   },
   {
-    socialIcon: <img className="h-5 w-5 lg:h-10 lg:w-10 fill-[#3d5a70] hover:fill-accent" src={TumblrIcon}/>,
+    socialIcon: <img className="h-5 w-5 lg:h-10 lg:w-10 fill-[#3d5a70] hover:fill-accent" src={Github}/>,
     socialLink: "#",
-    socialTitle: "Tumblr",
+    socialTitle: "Github",
   },
   {
-    socialIcon: <img className="h-5 w-5 lg:h-10 lg:w-10 fill-[#0ddae1] hover:fill-accent" src={TwitterIcon}/>,
-    socialLink: "https://twitter.com/",
-    socialTitle: "Twitter",
+    socialIcon: <img className="h-5 w-5 lg:h-10 lg:w-10 fill-[#0ddae1] hover:fill-accent" src={Linkedin}/>,
+    socialLink: "https://linkedin.com/",
+    socialTitle: "LinkeIn",
   },
 ];
