@@ -1,6 +1,6 @@
 import PatternImg from "../../assets/images/ressources/patternImg.jpg";
 import PatternImg2 from "../../assets/images/ressources/patternImg2.jpg";
-import SectionTitle from "../SectionTitle/SectionTitle"
+import SectionTitle from "../SectionTitle/SectionTitle";
 import { parcours } from "../../data/parcours";
 
 const Parcours = () => {
@@ -13,7 +13,7 @@ const Parcours = () => {
       <div className="container sm:container md:container lg:container xl:max-w-[75rem] mx-auto">
         <SectionTitle
           title="The Best"
-          titleInner="Services"
+          titleInner="Parcours"
         //   subTitle="What We Do"
           desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
         ></SectionTitle>
