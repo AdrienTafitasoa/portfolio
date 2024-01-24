@@ -5,31 +5,31 @@ const MenuLinks = () => {
       <ul className="flex flex-col lg:flex-row gap-4 lg:gap-10">
         <li className="menuItemHasChildren relative group text-[1rem] lg:text-[1.125rem] font-Poppins font-semibold uppercase">
           <span className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
-            Home
+            Adrien Robinson
           </span>
           
         </li>
         <li className="menuItemHasChildren relative group text-[1rem] lg:text-[1.125rem] font-Poppins font-semibold uppercase">
           <span className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
-            Blog
+            A Propos
           </span>
           
         </li>
         <li className="menuItemHasChildren relative group text-[1rem] lg:text-[1.125rem] font-Poppins font-semibold uppercase">
           <span className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
-            Portfolio
+            Parcours
           </span>
           
         </li>
         <li className="menuItemHasChildren relative group text-[1rem] lg:text-[1.125rem] font-Poppins font-semibold uppercase">
           <span className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
-            Pages
+            Compétences
           </span>
           
         </li>
         <li className="menuItemHasChildren relative group text-[1rem] lg:text-[1.125rem] font-Poppins font-semibold uppercase">
           <span className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
-            Service
+            Projet Réalisée
           </span>
           
         </li>
