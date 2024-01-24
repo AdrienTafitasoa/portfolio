@@ -21,7 +21,8 @@ const Parcours = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.875rem]">
             {parcours.map(
               (item, index) =>
-                index < 3 && (
+              // index < 3 &&
+              (
                   <div className="gridItem" key={index}>
                     <div className="serviceBox text-center flex flex-wrap gap-3 flex-col justify-center items-center relative w-full z-[1] min-h-[20rem] md:min-h-[24.375rem] p-[1.875rem] md:p-7 lg:p-10 xl:p-[3.125rem]">
                       <div
