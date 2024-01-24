@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.33",
+    "@tailwindcss/forms": "^0.5.7",
     "@testing-library/jest-dom": "^6.2.1",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.2",
@@ -22,22 +23,26 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.21.3",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "react-scroll-trigger": "^0.6.14",
     "react-slick": "^0.29.0",
     "react-spinners-kit": "^1.9.1",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.0.5",
+    "tailwind-scrollbar": "^3.0.5",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
     "eslint": "^8.55.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
     "vite": "^5.0.8"
   }
 }
