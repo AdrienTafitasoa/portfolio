@@ -1,66 +1,48 @@
-import PortImg1 from "../assets/images/ressources/portImg1-1.jpg";
-import PortImg2 from "../assets/images/ressources/portImg1-2.jpg";
-import PortImg3 from "../assets/images/ressources/portImg1-3.jpg";
-import PortImg4 from "../assets/images/ressources/portImg1-4.jpg";
-import PortImg5 from "../assets/images/ressources/portImg1-5.jpg";
-import PortImg6 from "../assets/images/ressources/portImg1-6.jpg";
-import PortImg7 from "../assets/images/ressources/portImg1-7.jpg";
+import ProjectImg1 from "../assets/images/project/project-wifi.png";
+import ProjectImg2 from "../assets/images/project/project-annuaire.png";
+import ProjectImg3 from "../assets/images/project/project-tohano-desktop.png";
+import ProjectImg4 from "../assets/images/project/project-tohano-web.png";
+import ProjectImg5 from "../assets/images/project/project-portfolio.png";
 
 export const projectsRealty = [
   {
     id: 1,
     portBox: "basis-full md:basis-[41.57%] px-[.9375rem]",
-    portImg: PortImg1,
-    portTitle: "Graphic Illustration",
-    portSubTitle: "Flat Design stock illustration",
-    portcate: "graphic",
+    portImg: ProjectImg1,
+    portTitle: "Compteur Wifi dans un Cyber Café",
+    portSubTitle: "Développer sous WinDev",
+    portcate: "Desktop",
   },
   {
     id: 2,
     portBox: "basis-full md:basis-[58.3%] px-[.9375rem]",
-    portImg: PortImg2,
-    portTitle: "Efficient Team Mobile",
-    portSubTitle: "Flat Design stock illustration",
-    portcate: "development",
+    portImg: ProjectImg2,
+    portTitle: "Anuaire Electroniques",
+    portSubTitle: "Développer en Java et JavaFX",
+    portcate: "Desktop",
   },
   {
     id: 3,
-    portBox: "basis-full md:basis-2/6 px-[.9375rem]",
-    portImg: PortImg3,
-    portTitle: "UI/UX Creative Design",
-    portSubTitle: "Flat Design stock illustration",
-    portcate: "figma",
+    portBox: "basis-full md:basis-[41.60%] px-[.9375rem]",
+    portImg: ProjectImg3,
+    portTitle: "Mise en rélation entre les famille de malades et les associations",
+    portSubTitle: "Développer en C# et WPF",
+    portcate: "Desktop",
   },
   {
     id: 4,
-    portBox: "basis-full md:basis-2/6 px-[.9375rem]",
-    portImg: PortImg4,
-    portTitle: "Mobile Illustration",
-    portSubTitle: "Flat Design stock illustration",
-    portcate: "illustration",
+    portBox: "basis-full md:basis-[58.33%] px-[.9375rem]",
+    portImg: ProjectImg4,
+    portTitle: "Mise en rélation entre les famille de malades et les associations",
+    portSubTitle: "Développer en Spring boot et React",
+    portcate: "Web",
   },
   {
     id: 5,
-    portBox: "basis-full md:basis-2/6 px-[.9375rem]",
-    portImg: PortImg5,
-    portTitle: "Anaylsis Application",
-    portSubTitle: "Flat Design stock illustration",
-    portcate: "development",
-  },
-  {
-    id: 6,
-    portBox: "basis-full md:basis-[58.3%] px-[.9375rem]",
-    portImg: PortImg6,
-    portTitle: "Business Growth",
-    portSubTitle: "Flat Design stock illustration",
-    portcate: "illustration",
-  },
-  {
-    id: 7,
-    portBox: "basis-full md:basis-[41.57%] px-[.9375rem]",
-    portImg: PortImg7,
-    portTitle: "Profitable Business",
-    portSubTitle: "Flat Design stock illustration",
-    portcate: "graphic",
+    portBox: "basis-full md:basis-[100%] px-[.9375rem]",
+    portImg: ProjectImg5,
+    portTitle: "Mon portfolio",
+    portSubTitle: "Developper en React",
+    portcate: "Web",
   },
 ];
