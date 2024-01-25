@@ -1,6 +1,6 @@
 //import { Link } from "react-router-dom";
 import { FiChevronRight } from "react-icons/fi";
-import FeatImg from "../../assets/images/ressources/featMockup.jpg";
+import PhotoProfil from "../../assets/images/ressources/IMG_3062.jpg";
 import Shape1 from "../../assets/images/shape/shape-1.png";
 import Shape2 from "../../assets/images/shape/shape-2.png";
 import Shape3 from "../../assets/images/shape/shape-3.png";
@@ -30,7 +30,7 @@ const FeaturedArea = () => {
                   <div className="featuredImg relative rounded-full">
                     <img
                       className="rounded-full relative z-[1] max-w-full"
-                      src={FeatImg}
+                      src={PhotoProfil}
                       alt=""
                     ></img>
                     {/* Featured Image */}
