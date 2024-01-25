@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { projectsRealty } from "../../data/projects";
-import { FiChevronDown } from "react-icons/fi";
 import SectionTitle from "../SectionTitle/SectionTitle"
 
 
@@ -50,7 +49,6 @@ const RealityProjects = () => {
       <SectionTitle
           title="The Best"
           titleInner="Projet réalisée"
-        //   subTitle="What We Do"
           desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
         ></SectionTitle>
         <div className="pageInner grid gap-10 md:gap-20 grid-cols-1 w-full">
@@ -68,7 +66,6 @@ const RealityProjects = () => {
                     }}
                   >
                     {item.filterItem}
-                    <FiChevronDown  className="font-bold absolute right-[1.375rem] opacity-0 group-hover:opacity-100"></FiChevronDown>
                   </li>
                 )
             )}

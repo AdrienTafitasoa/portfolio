@@ -2,6 +2,7 @@ import PatternImg from "../../assets/images/ressources/patternImg3.jpg";
 import PatternImg2 from "../../assets/images/ressources/patternImg2.jpg";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import { parcours } from "../../data/parcours";
+import {motion} from "framer-motion";
 
 const Parcours = () => {
   return (
@@ -21,7 +22,9 @@ const Parcours = () => {
             {parcours.map(
               (item, index) =>
               (
-                  <div className="gridItem" key={index}>
+                  <motion.div className="gridItem" key={index}
+                    whileHover={{scale:1.1}}
+                  >
                     <div className="serviceBox text-center flex flex-wrap gap-3 flex-col justify-center items-center relative w-full z-[1] min-h-[20rem] md:min-h-[24.375rem] p-[1.875rem] md:p-7 lg:p-10 xl:p-[3.125rem]">
                       <div
                         className={`serviceBg before:absolute before:inset-0 before:${item.bgColor} before:rounded-[10px] before:sm:rounded-[1.25rem] before:md:rounded-[3.125rem] before:opacity-70 before:z-[1] bg-blend-multiply absolute rounded-[10px] sm:rounded-[1.25rem] md:rounded-[3.125rem] inset-0 bg-no-repeat bg-center bg-cover z-[-1] ${item.bgColor}`}
@@ -43,7 +46,7 @@ const Parcours = () => {
                         {item.servDesc}
                       </p>
                     </div>
-                  </div>
+                  </motion.div>
                 )
             )}
           </div>
