@@ -1,27 +1,25 @@
-import PatternImg from "../../assets/images/ressources/patternImg.jpg";
+import PatternImg from "../../assets/images/ressources/patternImg3.jpg";
 import PatternImg2 from "../../assets/images/ressources/patternImg2.jpg";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import { parcours } from "../../data/parcours";
 
 const Parcours = () => {
   return (
-    <section className="servicesWrap py-[4.5rem] md:pt-[5.5rem] lg:pt-7 xl:pt-20 pb-[4.5rem] md:pb-[5.5rem] lg:pb-[6.25rem] relative w-full">
+    <section className="servicesWrap py-[4.5rem] md:pt-[5.5rem] lg:py-[2rem] xl:py-[2rem] pb-[4.5rem] md:pb-[5.5rem] lg:pb-[6.25rem] relative w-full">
       <div
         className="fixedBg bg-right-top bg-no-repeat opacity-20 top-0 sm:top-0 md:top-0 lg:top-[-7.5rem]"
         style={{ backgroundImage: `url(${PatternImg})` }}
       ></div>
       <div className="container sm:container md:container lg:container xl:max-w-[75rem] mx-auto">
         <SectionTitle
-          title="The Best"
-          titleInner="Parcours"
-        //   subTitle="What We Do"
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          title="Ma Formation"
+          titleInner="Académiques"
+          desc=""
         ></SectionTitle>
         <div className="servicesBoxes relative w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.875rem]">
             {parcours.map(
               (item, index) =>
-              // index < 3 &&
               (
                   <div className="gridItem" key={index}>
                     <div className="serviceBox text-center flex flex-wrap gap-3 flex-col justify-center items-center relative w-full z-[1] min-h-[20rem] md:min-h-[24.375rem] p-[1.875rem] md:p-7 lg:p-10 xl:p-[3.125rem]">
@@ -52,16 +50,7 @@ const Parcours = () => {
           {/* Services Boxes */}
         </div>
         <div className="viewAll text-center w-full mt-10 md:mt-[3.125rem] lg:mt-[4.0625rem]">
-          <p className="text-desc2 font-NunitoSans text-[1rem] md:text-[1.125rem]">
-            Want to see my professional services.{" "}
-            {/* <Link
-              className="text-accent font-Poppins font-medium hover:text-accent2 underline underline-offset-8"
-              to="/service"
-              title="Click here to View More"
-            >
-              Click here to View More
-            </Link> */}
-          </p>
+          
           {/* View All */}
         </div>
       </div>

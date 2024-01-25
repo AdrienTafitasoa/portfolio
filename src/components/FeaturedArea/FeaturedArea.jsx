@@ -8,7 +8,7 @@ import Shape4 from "../../assets/images/shape/shape-4.png";
 
 const FeaturedArea = () => {
   return (
-    <section className="featuredAreaWrap md:text-left text-center bg-dark z-[1] flex items-center bgGrident1 bg-blend-hard-light relative min-h-screen xl:rounded-br-[20rem] lg:rounded-br-[18rem] md:rounded-br-[15rem] sm:rounded-br-[10rem] rounded-br-0 w-screen md:py-[6.25rem] py-20">
+    <section className="featuredAreaWrap md:text-left text-center bg-[#8EC8F6] z-[1] flex items-center bgGrident1 bg-blend-hard-light relative min-h-screen xl:rounded-br-[20rem] lg:rounded-br-[18rem] md:rounded-br-[15rem] sm:rounded-br-[10rem] rounded-br-0 w-screen md:py-[6.25rem] py-20">
       <div className="shaps absolute inset-0">
         <img className="absolute floatAnim left-[10%] top-[10%] animDelay1" src={Shape1} alt="Shape"></img>
         <img className="absolute floatAnim right-[10%] bottom-[20%] animDelay2" src={Shape2} alt="Shape"></img>
@@ -41,28 +41,27 @@ const FeaturedArea = () => {
               </div>
             </div>
             <div>
-              <div className="featuredCap relative w-full mt-10 md:mt-0">
-                <span className="bg-accent opacity-[.07] w-[6.25rem] h-[6.25rem] md:w-[12.5rem] md:h-[12.5rem] absolute rounded-full z-[-1] top-[-2.5rem] md:top-[-5rem]"></span>
-                <h3 className="font-normal text-[1.5rem] sm:text-[1.5rem] md:text-[1.875rem] lg:text-[2rem] xl:text-[2.5rem] font-Caveat text-white uppercase leading-none">
-                  Hello, I Am
+              <div className="featuredCap relative w-full ml-[1.5rem] mt-10 md:mt-0">
+                <span className="bg-dark2 opacity-[.07] w-[6.25rem] h-[6.25rem] md:w-[12.5rem] md:h-[12.5rem] absolute rounded-full z-[-1] top-[-2.5rem] md:top-[-5rem]"></span>
+                <h3 className="font-normal text-[1.5rem] sm:text-[1.5rem] md:text-[1.875rem] lg:text-[2rem] xl:text-[2rem] font-Caveat text-white uppercase leading-none">
+                  Bonjour, Je suis
                 </h3>
-                <h2 className="font-bold text-[2.3rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] font-Poppins text-white uppercase">
-                  Alycia
-                  <span className="font-normal text-[2.3rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] text-accent font-Poppins uppercase">
-                    Carey
+                <h2 className="font-bold text-[2.3rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[4rem] font-Poppins text-white uppercase">
+                  Adrien
+                  <span className="font-normal text-[2.3rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[4rem] text-accent font-Poppins uppercase">{" "}
+                    Robinson
                   </span>
                 </h2>
                 <h5 className="md:justify-start justify-center font-bold text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] font-Poppins text-white uppercase flex items-center gap-2.5 tracking-[1px]">
                   <span className="w-[2.5rem] sm:w-[3rem] md:w-[4.375rem] bg-accent h-[1px]"></span>
-                  UI/UX Designer
+                  Développeur Fulstack
                 </h5>
-                <p className="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] lg:text-[1.25rem] xl:text-[1.375rem] text-desc md:leading-9 sm:leading-7 leading-6 w-full md:w-full lg:w-full xl:w-3/4 mt-6">
-                  We're an award-winning, forward thinking, boutique digital &
-                  creative in Edmonton, Canada.
+                <p className="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] lg:text-[1.25rem] xl:text-[1.375rem] text-[#070815] md:leading-9 sm:leading-7 leading-6 w-full md:w-full lg:w-full xl:w-3/4 mt-6">
+                  Je suis un scientifique passionée dans le monde de
+                  développement de logiciel Web et Desktop.
                 </p>
-                <p className="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] lg:text-[1.25rem] xl:text-[1.375rem] text-desc md:leading-9 sm:leading-7 leading-6 w-full md:w-full lg:w-full xl:w-3/4 mt-4">
-                  Our strategists, designers and coders work with clients from
-                  all over the world to build successful,
+                <p className="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] lg:text-[1.25rem] xl:text-[1.375rem] text-[#070815] md:leading-9 sm:leading-7 leading-6 w-full md:w-full lg:w-full xl:w-3/4 mt-4">
+                  J'aime bien travailler avec JavaScript et Java pour le côté back-end, mais je peux aussi adapter avec d'autres Langages Informatiques.
                 </p>
                 <div className="flex items-center md:justify-start justify-center sm:gap-8 md:gap-10 lg:gap-15 xl:gap-20 gap-8 md:mt-[3.125rem] mt-[1.875rem]">
                   <p
@@ -80,7 +79,7 @@ const FeaturedArea = () => {
                     // to="/"
                     title="Download CV"
                   >
-                    Download CV
+                    Télécharger mon CV
                   </p>
                 </div>
                 {/* Featured Cap */}

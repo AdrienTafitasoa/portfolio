@@ -30,10 +30,6 @@ const Header = () => {
           <div className="container mx-auto sm:container md:container lg:container xl:container 2xl:container">
             <div className="flex items-center justify-between w-full topbarInner">
               <div className="logo inline-block max-w-[50%]">
-                {/* <Link to="/" title="Fastone">
-                  <img src={Logo} alt="Logo"></img>
-                </Link> */}
-                {/* Logo */}
               </div>
               <div className="hidden menuWrapper">
                 <MenuLinks></MenuLinks>
@@ -61,7 +57,7 @@ const Header = () => {
                 transform: "matrix(-1, 0, 0, -1, 0, 0)",
               }}
             >
-              Follow Me
+              Trouver moi
             </h5>
           </div>
           {/* Menu Wrap */}

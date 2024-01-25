@@ -363,7 +363,7 @@ nav ul ul,
 }
 .stickyHeader .topbar {
   top: 0;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(13, 17, 42, .5);
   backdrop-filter: blur(5px);
   padding: 1.25rem 0;
 }
