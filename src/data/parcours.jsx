@@ -1,4 +1,4 @@
-import UiCreativeDesignIcon from "../lib/icons/Curve.svg";
+import bacc from "../lib/icons/Certificate.png";
 import licence from "../lib/icons/Mortarboard.svg";
 import inclusiv from "../lib/icons/logo-inclusiv.png";
 
@@ -8,7 +8,7 @@ export const parcours = [
     bgColor: "bg-[#93C5FD]",
     titleColor: "text-white",
     descColor: "text-[#070815]",
-    servIcon: <img className="h-[4.25rem] w-[4.25rem] fill-white" src={UiCreativeDesignIcon}/>,
+    servIcon: <img className="h-[4.25rem] w-[4.25rem] fill-white" src={bacc}/>,
     servTitle: "UI/UX Creative Design",
     servDesc: "J'ai obtenu mon diplôme Baccalauréat en l'année 2018 avec Mention Assez-Bien Série D.",
   },
