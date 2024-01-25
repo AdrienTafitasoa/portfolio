@@ -1,7 +1,7 @@
 import JavaScriptIcon from "../lib/icons/JavaScript.svg";
 import HtmlIcon from "../lib/icons/Html.svg";
 import PhotoshopIcon from "../lib/icons/Photoshop.svg";
-import WordPressIcon from "../lib/icons/WordPress.svg";
+import ReactIcon from "../lib/icons/react.svg";
 
 export const skills = [
   {
@@ -20,16 +20,16 @@ export const skills = [
   },
   {
     skillBox: "pb-10 pt-10 sm:pb-5 sm:pt-10 sm:pr-10 border-r-0 sm:border-r-[1px] sm:border-b-0 border-b-[1px] border-[#9bb1cf]",
-    skillIcon: <img className="h-10 w-10" src={PhotoshopIcon}/>,
-    skillTitle: "Photoshop",
+    skillIcon: <img className="h-10 w-10" src={ReactIcon}/>,
+    skillTitle: "ReactJs",
     skillDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    skillPercent: "72%",
+    skillPercent: "70%",
   },
   {
     skillBox: "pt-10 sm:pb-5 sm:pt-10 sm:pl-10",
-    skillIcon: <img className="h-10 w-10" src={WordPressIcon}/>,
-    skillTitle: "WordPress",
+    skillIcon: <img className="h-10 w-15" src={PhotoshopIcon}/>,
+    skillTitle: "PhotoShop",
     skillDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    skillPercent: "80%",
+    skillPercent: "65%",
   },
 ];

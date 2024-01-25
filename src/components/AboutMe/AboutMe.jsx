@@ -65,13 +65,12 @@ const AboutMe = () => {
                         Tel:
                       </strong>
                       <span className="text-desc2 font-semibold font-NunitoSans col-span-2">
-                        <a
-                          className="text-desc2 font-semibold font-NunitoSans hover:text-accent"
-                          href="tel:+12 986 987 7867"
-                          title=""
+                        <span
+                          className="text-desc2 font-semibold font-NunitoSans "
+                          
                         >
                           +261 34 02 215 44
-                        </a>
+                        </span>
                       </span>
                     </li>
                     <li className="grid grid-cols-3 gap-4 text-[1rem] md:text-[1.125rem]">

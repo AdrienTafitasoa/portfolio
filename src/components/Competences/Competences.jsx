@@ -4,20 +4,18 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 
 const Competences = () => {
   return (
-    <section className="servicesWrap py-[4.5rem] md:pt-[5.5rem] lg:pt-7 xl:pt-20 pb-[4.5rem] md:pb-[5.5rem] lg:pb-[6.25rem] relative w-full">
+    <section className="servicesWrap py-[4.5rem] md:pt-[5.5rem] lg:py-[2rem] xl:py-[2rem] pb-[4.5rem] md:pb-[5.5rem] lg:pb-[6.25rem] relative w-full">
         <div className="container sm:container md:container lg:container xl:max-w-[75rem] mx-auto">
             <div className="skillsWrap relative w-full">
             <SectionTitle
-          title="The Best"
-          titleInner="Competence"
-        //   subTitle="What We Do"
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+          title="Mes"
+          titleInner="Compétences"
+          desc=""
         ></SectionTitle>
-            <SectionTitleIcon title="Skills"></SectionTitleIcon>
+            {/* <SectionTitleIcon title="Skills"></SectionTitleIcon> */}
             <div className="skillsList grid grid-cols-1 sm:grid-cols-2 relative w-full">
                 {skills.map(
                 (item, index) =>
-                    // index < 4 && 
                     (
                     <div className={item.skillBox} key={index}>
                         <span className="bg-white rounded-[10px] h-[4.375rem] w-[4.375rem] inline-flex items-center justify-center">
