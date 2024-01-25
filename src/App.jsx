@@ -1,25 +1,20 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import AboutMe from './components/AboutMe/AboutMe';
-import RealityProjects from './components/RealityProjects/RealityProjects';
-import FeaturedArea from './components/FeaturedArea/FeaturedArea';
-import Header from './components/Header/Header';
-import Parcours from './components/Parcours/Parcours';
-import Competences from './components/Competences/Competences';
-import Contact from './components/Contact/Contact';
+import Portfolio from './pages/Portfolio/Portfolio';
+import ProjectDetail from './pages/ProjectDetails/ProjectDetail';
 
 function App() {
-
-  return (
-    <>
-      <Header/>
-      <FeaturedArea/>
-      <AboutMe/>
-      <Parcours/>
-      <Competences/>
-      <RealityProjects/>
-      <Contact/>
-    </>
-  )
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<Portfolio/>
+  },
+  {
+    path:"/project/:id",
+    element:<ProjectDetail/>
+  }
+])
+  return (<RouterProvider router={router}/>);
 }
 
 export default App;
