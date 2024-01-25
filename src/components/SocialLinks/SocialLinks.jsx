@@ -5,7 +5,8 @@ const SocialLinks = () => {
     <div className="socialLinks flex flex-col items-center justify-center gap-5">
       {social.map(
         (item, index) =>
-          index < 3 && (
+          // index < 3 &&
+          (
             <a
               className="inline-block"
               href={item.socialLink}

@@ -5,6 +5,7 @@ import FeaturedArea from './components/FeaturedArea/FeaturedArea';
 import Header from './components/Header/Header';
 import Parcours from './components/Parcours/Parcours';
 import Competences from './components/Competences/Competences';
+import Contact from './components/Contact/Contact';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Parcours/>
       <Competences/>
       <RealityProjects/>
+      <Contact/>
     </>
   )
 }
