@@ -4,42 +4,42 @@ const MenuLinks = () => {
     <nav className="relative hidden lg:block">
       <ul className="flex flex-col lg:flex-row gap-4 lg:gap-10">
         <li className="menuItemHasChildren relative group text-[1rem] lg:text-[1.125rem] font-Poppins font-semibold uppercase">
-          <span className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
+          <a href="#adrienRobinson" className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
             Adrien Robinson
-          </span>
+          </a>
           
         </li>
         <li className="menuItemHasChildren relative group text-[1rem] lg:text-[1.125rem] font-Poppins font-semibold uppercase">
-          <span className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
+          <a  href="#apropos" className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
             A Propos
-          </span>
+          </a>
           
         </li>
         <li className="menuItemHasChildren relative group text-[1rem] lg:text-[1.125rem] font-Poppins font-semibold uppercase">
-          <span className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
+          <a href="#parcours" className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
             Parcours
-          </span>
+          </a>
           
         </li>
         <li className="menuItemHasChildren relative group text-[1rem] lg:text-[1.125rem] font-Poppins font-semibold uppercase">
-          <span className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
+          <a href="#competences" className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
             Compétences
-          </span>
+          </a>
           
         </li>
         <li className="menuItemHasChildren relative group text-[1rem] lg:text-[1.125rem] font-Poppins font-semibold uppercase">
-          <span className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
+          <a href="#projetrealise" className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer">
             Projet Réalisée
-          </span>
+          </a>
           
         </li>
         <li className="menuItemHasChildren relative group text-[1rem] lg:text-[1.125rem] font-Poppins font-semibold uppercase">
-          <p
-            className="group-hover:text-accent text-accent2 pr-5 relative block"
-            title="Contact"
+          <a
+            className="group-hover:text-accent text-accent2 pr-5 relative block cursor-pointer"
+            href="#contact"
           >
             Contact
-          </p>
+          </a>
         </li>
       </ul>
     </nav>

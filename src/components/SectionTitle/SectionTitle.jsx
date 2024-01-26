@@ -8,7 +8,7 @@ const SectionTitle = ({title,titleInner, desc}) => {
               {titleInner}
             </span>
           </h2>
-          <p className="text-desc2 text-[1rem] md:text-[1.25rem] sm:text-[1.225rem] mt-1">
+          <p className="text-white text-[1rem] md:text-[1.25rem] sm:text-[1.225rem] mt-1">
             {desc}
           </p>
           {/* Section Title */}

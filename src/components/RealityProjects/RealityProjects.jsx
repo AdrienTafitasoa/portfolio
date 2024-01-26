@@ -39,7 +39,7 @@ const RealityProjects = () => {
     setActive(index);
   };
   return (
-    <section className="pageWrap pt-20 pb-[6.875rem] relative w-full">
+    <section id="projetrealise" className="pageWrap pt-20 pb-[6.875rem] relative w-full">
       <div className="container sm:container md:container lg:container xl:max-w-[73.125rem] mx-auto">
       <SectionTitle
           title="Mes Projets"

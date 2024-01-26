@@ -17,7 +17,7 @@ const AboutMe = () => {
     }
   },[isInView]);
   return (
-    <section className="aboutUsWrap py-[4.5rem] md:py-[5.5rem] lg:py-[2rem] xl:py-[2rem] relative w-full">
+    <section id="apropos" className="aboutUsWrap py-[4.5rem] md:py-[5.5rem] lg:py-[2rem] xl:py-[2rem] relative w-full">
       <div
         className="fixedBg bg-left-top bg-no-repeat opacity-20"
         style={{ backgroundImage: `url(${PatternImg})` }}
