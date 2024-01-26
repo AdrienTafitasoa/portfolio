@@ -17,6 +17,7 @@
     "@testing-library/user-event": "^14.5.2",
     "animate.css": "^4.1.1",
     "framer-motion": "^10.18.0",
+    "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
