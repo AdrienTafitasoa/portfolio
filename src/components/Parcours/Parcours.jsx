@@ -2,9 +2,19 @@ import PatternImg from "../../assets/images/ressources/patternImg3.jpg";
 import PatternImg2 from "../../assets/images/ressources/patternImg2.jpg";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import { parcours } from "../../data/parcours";
-import {motion} from "framer-motion";
+import { useEffect, useRef } from "react";
+import {motion, useInView, useAnimation} from "framer-motion";
 
 const Parcours = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {once:true});
+  const mainControls = useAnimation();
+  useEffect(()=>{
+    console.log(isInView)
+    if(isInView){
+      mainControls.start("visible")
+    }
+  },[isInView]);
   return (
     <section className="servicesWrap py-[4.5rem] md:pt-[5.5rem] lg:py-[2rem] xl:py-[2rem] pb-[4.5rem] md:pb-[5.5rem] lg:pb-[6.25rem] relative w-full">
       <div
@@ -18,12 +28,18 @@ const Parcours = () => {
           desc=""
         ></SectionTitle>
         <div className="servicesBoxes relative w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.875rem]">
+          <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.875rem]">
             {parcours.map(
               (item, index) =>
               (
                   <motion.div className="gridItem" key={index}
-                    whileHover={{scale:1.1}}
+                    variants={{
+                      hidden:{opacity:0, x:75},
+                      visible:{opacity:1, x:[-75,50,-50,25,-25,0]}
+                    }}
+                    initial="hidden"
+                    animate={mainControls}
+                    transition={{duration:0.5, delay:0.25}}
                   >
                     <div className="serviceBox text-center flex flex-wrap gap-3 flex-col justify-center items-center relative w-full z-[1] min-h-[20rem] md:min-h-[24.375rem] p-[1.875rem] md:p-7 lg:p-10 xl:p-[3.125rem]">
                       <div
@@ -36,9 +52,6 @@ const Parcours = () => {
                       <h3
                         className={`text-[1.3rem] lg:text-[1.325rem] xl:text-[1.5rem] font-Poppins font-semibold max-w-full sm:max-w-full lg:max-w-full xl:max-w-[90%] ${item.titleColor}`}
                       >
-                        {/* <Link to={`/service/${item.id}`} title={item.servTitle}>
-                          {item.servTitle}
-                        </Link> */}
                       </h3>
                       <p
                         className={`text-[1rem] md:text-[1.125rem] font-NunitoSans ${item.descColor}`}

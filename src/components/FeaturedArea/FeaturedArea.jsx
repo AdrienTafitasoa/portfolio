@@ -71,16 +71,17 @@ const FeaturedArea = () => {
                   >
                     <FiChevronRight className="bg-accent text-white rounded-[5px] md:rounded-[10px] w-9 h-[3.5rem] md:w-11 md:h-[4.375rem] p-2"></FiChevronRight>
                     <span className="font-bold font-Poppins underline underline-offset-8">
-                      Hire Me
+                      
                     </span>
                   </p>
-                  <p
+                  <a
                     className="bg-white text-accent text-[1rem] font-Poppins font-bold uppercase rounded-[5px] md:rounded-[10px] md:px-6 lg:px-10 xl:px-11 px-7 md:py-[1.125rem] py-[14px] hover:bg-accent hover:text-white text-center inline-block"
-                    // to="/"
+                    href="/src/assets/images/ressources/CV_Adrien_TAFITASOA.pdf"
                     title="Download CV"
+                    target="_blank"
                   >
                     Télécharger mon CV
-                  </p>
+                  </a>
                 </div>
                 {/* Featured Cap */}
               </div>

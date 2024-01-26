@@ -3,10 +3,19 @@ import PatternImg2 from "../../assets/images/ressources/patternImg2.jpg";
 import AboutUsBg from "../../assets/images/ressources/secBg.jpg";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import AboutImg from "../../assets/images/ressources/IMG_3062.jpg";
-// import { ReactComponent as Signature } from "../../lib/icons/Signature.svg";
-// import { GoPrimitiveDot } from "react-icons/go";
+import { useEffect, useRef } from "react";
+import {motion, useInView, useAnimation} from "framer-motion";
 
 const AboutMe = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {once:true});
+  const mainControls = useAnimation();
+  useEffect(()=>{
+    console.log(isInView)
+    if(isInView){
+      mainControls.start("visible")
+    }
+  },[isInView]);
   return (
     <section className="aboutUsWrap py-[4.5rem] md:py-[5.5rem] lg:py-[2rem] xl:py-[2rem] relative w-full">
       <div
@@ -19,13 +28,21 @@ const AboutMe = () => {
           titleInner="Moi"
           desc=""
         ></SectionTitle>
-        <div className="aboutUs relative w-full p-[1.25rem] lg:p-[1.875rem] mt-[5.9375rem]">
+        <div ref={ref} className="aboutUs relative w-full p-[1.25rem] lg:p-[1.875rem] mt-[5.9375rem]">
           <div
             className="aboutUsBg before:absolute before:inset-0 before:bg-gray before:rounded-[7px] before:sm:rounded-[7px] before:md:rounded-[7px] before:opacity-70 before:z-[1] bg-gray bg-blend-multiply absolute rounded-[7px] sm:rounded-[7px] md:rounded-[7px] inset-0 left-0 lg:left-[10.9375rem] bg-no-repeat bg-center bg-cover"
             style={{ backgroundImage: `url(${AboutUsBg})` }}
           ></div>
           <div className="grid gap-[1.875rem] lg:grid-cols-2 grid-cols-1">
-            <div>
+            <motion.div
+              variants={{
+                hidden:{x:-150, zIndex:2},
+                visible:{x:[-150,5,-5, 0]}
+              }}
+              initial="hidden"
+              animate={mainControls}
+              transition={{duration:0.55, delay:0.25}}
+            >
               <div className="aboutImg relative mt-[-5.625rem] ml-0 lg:ml-[-1.875rem]">
                 <img
                   className="rounded-[7px] sm:rounded-[7px] md:rounded-[7px] relative z-[1] w-full"
@@ -34,10 +51,18 @@ const AboutMe = () => {
                 ></img>
                 {/* About Image */}
               </div>
-            </div>
+            </motion.div>
             <div>
               <div className="aboutCapWrap w-full">
-                <div className="aboutCap relative rounded-[10px] sm:rounded-[7px] md:rounded-[7px] overflow-hidden z-[1] lg:py-12 xl:pt-[4.6875rem] xl:pb-[4.375rem] p-5 md:p-10 lg:px-[3.5rem] xl:px-20">
+                <motion.div className="aboutCap relative rounded-[10px] sm:rounded-[7px] md:rounded-[7px] overflow-hidden z-[1] lg:py-12 xl:pt-[4.6875rem] xl:pb-[4.375rem] p-5 md:p-10 lg:px-[3.5rem] xl:px-20"
+                variants={{
+                  hidden:{x:150, zIndex:2},
+                  visible:{x:[150,-5,5,0]}
+                }}
+                initial="hidden"
+                animate={mainControls}
+                transition={{duration:0.55, delay:0.25}}
+                >
                   <div
                     className="aboutCapBg bg-white opacity-90 opc8 absolute rounded-in sm:rounded-[7px] md:rounded-[7px] inset-0 bg-no-repeat bg-center bg-cover z-[-1]"
                     style={{ backgroundImage: `url(${PatternImg2})` }}
@@ -104,9 +129,7 @@ const AboutMe = () => {
                       </span>
                     </li>
                   </ul>
-                  {/* <Signature className="fill-accent h-[4.5rem] mt-[2.375rem]"></Signature> */}
-                  {/* About Cap */}
-                </div>
+                </motion.div>
                 {/* About Cap Wrap */}
               </div>
             </div>
