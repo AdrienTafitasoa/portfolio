@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from "react";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import MenuLinks from "./MenuLinks";
+import ResponsiveHeader from "./ResponsiveHeader";
 
 const Header = () => {
   const refHeader = useRef();
@@ -53,6 +54,7 @@ const Header = () => {
         </div>
         {/* Header */}
       </header>
+      <ResponsiveHeader/>
     </React.Fragment>
   );
 };
