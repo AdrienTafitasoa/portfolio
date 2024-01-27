@@ -1,14 +1,9 @@
-import React, { useLayoutEffect, useRef, useState } from "react";
-import { CgClose, CgMenuRight } from "react-icons/cg";
+import React, { useLayoutEffect, useRef } from "react";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import MenuLinks from "./MenuLinks";
-// import { MenuData } from "./SideMenu/MenuData";
-// import SubMenu from "./SideMenu/SubMenu";
 
 const Header = () => {
   const refHeader = useRef();
-  const [sideMenu, setSideMenu] = useState(false);
-  const showSideMenu = () => setSideMenu(!sideMenu);
 
   useLayoutEffect(() => {
     const header = document.getElementById("header");
@@ -32,7 +27,7 @@ const Header = () => {
               <div className="logo inline-block max-w-[50%]">
               </div>
               <div className="hidden menuWrapper">
-                <MenuLinks></MenuLinks>
+                <MenuLinks/>
               </div>
             </div>
             {/* Topbar Inner */}
@@ -40,14 +35,8 @@ const Header = () => {
           {/* Topbar */}
         </div>
         <div className="menuWrap hidden lg:flex flex-col items-center justify-between fixed left-[3.4375rem] top-[5.625rem] bottom-[5.625rem] border-2 border-solid border-accent rounded-full z-[9999] w-[6.25rem] px-5 py-[3.125rem]">
-          <span className="mirror" onClick={showSideMenu}>
-            <CgMenuRight
-              className="text-white cursor-pointer hover:text-accent"
-              size={32}
-            ></CgMenuRight>
-          </span>
           <div className="flex flex-col items-center justify-center gap-8 menuInner">
-            <SocialLinks></SocialLinks>
+            <SocialLinks/>
             <span className="h-[2.5rem] sm:h-[3rem] md:h-[5.625rem] bg-accent w-[1px]"></span>
             <h5
               className="uppercase text-white font-Poppins font-bold text-[1rem]"
@@ -61,25 +50,6 @@ const Header = () => {
             </h5>
           </div>
           {/* Menu Wrap */}
-        </div>
-        <div
-          className="sideMenu bg-[#000] fixed transition-all ease-in-out duration-300 z-[9999] top-0 h-screen w-screen flex justify-center items-center px-8 py-16 overflow-y-scroll"
-          style={{ opacity: sideMenu ? "1" : "0", visibility: sideMenu ? "visible" : "hidden" }}
-        >
-          <span
-            className="mirror absolute right-10 top-4"
-            onClick={showSideMenu}
-          >
-            <CgClose
-              className="text-white cursor-pointer hover:text-accent"
-              size={40}
-            ></CgClose>
-          </span>
-          {/* <ul className="flex flex-col gap-4 w-80">
-            {MenuData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
-            })}
-          </ul> */}
         </div>
         {/* Header */}
       </header>

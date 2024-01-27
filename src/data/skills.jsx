@@ -32,8 +32,8 @@ export const skills = [
   {
     skillBox: "pb-10 pt-10 sm:pb-5 sm:pt-10 sm:pl-10 border-b-[1px] sm:border-b-[1px] border-[#9bb1cf]",
     skillIcon: <img className="h-10 w-15" src={PhotoshopIcon}/>,
-    skillTitle: "PhotoShop",
-    skillDesc: "Outils de designer",
+    skillTitle: "Git",
+    skillDesc: "Outils des développeur",
     skillPercent: "65%",
   },
   {

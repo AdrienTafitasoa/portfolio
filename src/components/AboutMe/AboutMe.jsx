@@ -1,6 +1,6 @@
 import PatternImg from "../../assets/images/ressources/patternImg.jpg";
 import PatternImg2 from "../../assets/images/ressources/patternImg2.jpg";
-import AboutUsBg from "../../assets/images/ressources/secBg.jpg";
+import AboutUsBg from "../../assets/images/ressources/5630974.jpg";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import AboutImg from "../../assets/images/ressources/IMG_3062.jpg";
 import { useEffect, useRef } from "react";
