@@ -4,15 +4,17 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import { parcours } from "../../data/parcours";
 import { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
+import { scrollBar } from "../Header/scroll";
 
 const Parcours = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, {once:true});
+  const isInView = useInView(ref);
   const mainControls = useAnimation();
   useEffect(()=>{
     console.log(isInView)
     if(isInView){
-      mainControls.start("visible")
+      mainControls.start("visible");
+      scrollBar("parcours");
     }
   },[isInView]);
   return (

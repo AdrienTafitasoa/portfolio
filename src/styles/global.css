@@ -377,7 +377,9 @@ nav ul ul,
 .swiper-slide {
   height: auto;
 } */
-
+#header .anchor_nav li.current a{
+  color: #0D112A;
+}
 /*=== Mirror ===*/
 .mirror {
   -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);

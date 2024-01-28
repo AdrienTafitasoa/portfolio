@@ -5,15 +5,18 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import AboutImg from "../../assets/images/ressources/IMG_3062.jpg";
 import { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
+import { scrollBar } from "../Header/scroll";
 
 const AboutMe = () => {
+  
   const ref = useRef(null);
-  const isInView = useInView(ref, {once:true});
+  const isInView = useInView(ref);
   const mainControls = useAnimation();
   useEffect(()=>{
-    console.log(isInView)
+    console.log("Abaout", isInView)
     if(isInView){
-      mainControls.start("visible")
+      mainControls.start("visible");
+      scrollBar("apropos")
     }
   },[isInView]);
   return (

@@ -1,6 +1,6 @@
 import JavaScriptIcon from "../lib/icons/JavaScript.svg";
 import HtmlIcon from "../lib/icons/Html.svg";
-import PhotoshopIcon from "../lib/icons/GitIcon.svg";
+import GitIcon from "../lib/icons/GitIcon.svg";
 import ReactIcon from "../lib/icons/react.svg";
 import JavaIcon from "../lib/icons/JavaIcon.svg";
 import CsharpIcon from "../lib/icons/CsharpIcon.svg";
@@ -31,7 +31,7 @@ export const skills = [
   },
   {
     skillBox: "pb-10 pt-10 sm:pb-5 sm:pt-10 sm:pl-10 border-b-[1px] sm:border-b-[1px] border-[#9bb1cf]",
-    skillIcon: <img className="h-15 w-12" src={PhotoshopIcon}/>,
+    skillIcon: <img className="h-15 w-12" src={GitIcon}/>,
     skillTitle: "Git",
     skillDesc: "Outils des développeur",
     skillPercent: "65%",

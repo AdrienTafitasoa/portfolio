@@ -4,19 +4,21 @@ import PatternImg from "../../assets/images/ressources/patternImg.jpg";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { scrollBar } from "../Header/scroll";
 
 const Competences = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref);
   const mainControls = useAnimation();
   useEffect(() => {
     console.log(isInView);
     if (isInView) {
       mainControls.start("visible");
+      scrollBar("competences")
     }
   }, [isInView]);
   return (
-    <section id="competences" className="servicesWrap py-[4.5rem] md:pt-[5.5rem] lg:py-[2rem] xl:py-[2rem] pb-[4.5rem] md:pb-[5.5rem] lg:pb-[6.25rem] relative w-full">
+    <section id="competences" ref={ref} className="servicesWrap py-[4.5rem] md:pt-[5.5rem] lg:py-[2rem] xl:py-[2rem] pb-[4.5rem] md:pb-[5.5rem] lg:pb-[6.25rem] relative w-full">
       <div
         className="fixedBg bg-left-top bg-no-repeat opacity-20"
         style={{ backgroundImage: `url(${PatternImg})` }}

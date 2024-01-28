@@ -5,10 +5,19 @@ import Shape1 from "../../assets/images/shape/shape-1.png";
 import Shape2 from "../../assets/images/shape/shape-2.png";
 import Shape3 from "../../assets/images/shape/shape-3.png";
 import Shape4 from "../../assets/images/shape/shape-4.png";
-
+import { useEffect, useRef } from "react";
+import { useInView} from "framer-motion";
+import { scrollBar } from "../Header/scroll";
 const FeaturedArea = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  useEffect(()=>{
+    if(isInView){
+      scrollBar("adrienRobinson")
+    }
+  },[isInView]);
   return (
-    <section id="adrienRobinson" className="featuredAreaWrap md:text-left text-center bg-[#60A5FA] z-[1] flex items-center bgGrident1 bg-blend-hard-light relative min-h-screen xl:rounded-br-[20rem] lg:rounded-br-[18rem] md:rounded-br-[15rem] sm:rounded-br-[10rem] rounded-br-0 w-screen md:py-[6.25rem] py-20">
+    <section id="adrienRobinson" ref={ref} className="featuredAreaWrap md:text-left text-center bg-[#60A5FA] z-[1] flex items-center bgGrident1 bg-blend-hard-light relative min-h-screen xl:rounded-br-[20rem] lg:rounded-br-[18rem] md:rounded-br-[15rem] sm:rounded-br-[10rem] rounded-br-0 w-screen md:py-[6.25rem] py-20">
       <div className="shaps absolute inset-0">
         <img className="absolute floatAnim left-[10%] top-[10%] animDelay1" src={Shape1} alt="Shape"></img>
         <img className="absolute floatAnim right-[10%] bottom-[20%] animDelay2" src={Shape2} alt="Shape"></img>

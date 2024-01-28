@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import { projectsRealty } from "../../data/projects";
 import SectionTitle from "../SectionTitle/SectionTitle"
 import RightDownIcon from "../../lib/icons/RightDown.svg";
+import { scrollBar } from "../Header/scroll";
 
 const filterList = [
   {
@@ -21,6 +22,8 @@ const RealityProjects = () => {
   const [item, setItem] = useState({ filterItem: "tous" });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
+  const ref  = useRef(null);
+  const isInView = useInView(ref);
 
   useEffect(() => {
     // get projects based on item
@@ -32,14 +35,20 @@ const RealityProjects = () => {
       });
       setProjects(newProjects);
     }
+    
   }, [item]);
 
+  useEffect(()=>{
+    if(isInView){
+      scrollBar("projetrealise");
+    }
+  },[isInView])
   const handleClick = (e, index) => {
     setItem({ filterItem: e.target.textContent.toLowerCase() });
     setActive(index);
   };
   return (
-    <section id="projetrealise" className="pageWrap pt-20 pb-[6.875rem] relative w-full">
+    <section id="projetrealise" ref={ref} className="pageWrap pt-20 pb-[6.875rem] relative w-full">
       <div className="container sm:container md:container lg:container xl:max-w-[73.125rem] mx-auto">
       <SectionTitle
           title="Mes Projets"
