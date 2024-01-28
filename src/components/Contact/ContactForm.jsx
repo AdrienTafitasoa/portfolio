@@ -1,19 +1,37 @@
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 const ContactForm = () => {
+  const form = useRef();
+  const sendEmail = (e)=>{
+    e.preventDefault();
+    emailjs.sendForm(
+      'service_0xqmtsg'
+    , 'template_om1g9b4'
+    , form.current
+    , 'GQmUoqH8qRtHyJvpd')
+      .then((result) => {
+          console.log(result.text);
+          console.log("Email sent");
+          e.target.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
     return (
       <div className="contactFormWrap relative w-full">
-        <form className="grid gap-[1.875rem] md:grid-cols-2 grid-cols-1">
+        <form ref={form} onSubmit={sendEmail} className="grid gap-[1.875rem] md:grid-cols-2 grid-cols-1">
           <div className="fieldBox w-full col-span-2">
             <label className="text-[1.2rem] text-[#232A60] font-Poppins font-bold px-[10px] md:px-[1.125rem] mb-[10px] block">
               Ecrire un Message
             </label>
-            <textarea className="border-2 border-solid border-[#fff] focus:border-[#fff] focus:outline-0 bg-[transparent] rounded-[10px] md:rounded-[10px] lg:rounded-[10px] w-full h-[8rem] md:h-[13.125rem] p-[1.125rem] text-white"></textarea>
+            <textarea className="border-2 border-solid border-[#fff] focus:border-[#fff] focus:outline-0 bg-[transparent] rounded-[10px] md:rounded-[10px] lg:rounded-[10px] w-full h-[8rem] md:h-[13.125rem] p-[1.125rem] text-white" name="message"></textarea>
           </div>
           <div className="fieldBox w-full">
             <label className="text-[1.2rem] text-[#232A60] font-Poppins font-bold px-[10px] md:px-[1.125rem] mb-[10px] block">
               Votre Nom
             </label>
             <input
-              type="text"
+              type="text" name="user_name"
               className="border-2 border-solid border-[#fff] focus:border-[#fff] focus:outline-0 bg-[transparent] rounded-[10px] md:rounded-[10px] lg:rounded-[10px] w-full h-[2.5rem] md:h-[3.875rem] p-[10px] md:p-[1.125rem] text-white"
             ></input>
           </div>
@@ -22,7 +40,7 @@ const ContactForm = () => {
               Votre Email
             </label>
             <input
-              type="email"
+              type="email" name="user_email"
               className="border-2 border-solid border-[#fff] focus:border-[#fff] focus:outline-0 bg-[transparent] rounded-[10px] md:rounded-[10px] lg:rounded-[10px] w-full h-[2.5rem] md:h-[3.875rem] p-[10px] md:p-[1.125rem] text-white"
             ></input>
           </div>
