@@ -8,6 +8,7 @@ import Shape4 from "../../assets/images/shape/shape-4.png";
 import { useEffect, useRef } from "react";
 import { useInView} from "framer-motion";
 import { scrollBar } from "../Header/scroll";
+import cv from "../../assets/images/ressources/CV_Adrien_TAFITASOA.pdf"
 const FeaturedArea = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -85,9 +86,8 @@ const FeaturedArea = () => {
                   </p>
                   <a
                     className="bg-white text-accent text-[1rem] font-Poppins font-bold uppercase rounded-[5px] md:rounded-[10px] md:px-6 lg:px-10 xl:px-11 px-7 md:py-[1.125rem] py-[14px] hover:bg-accent hover:text-white text-center inline-block"
-                    href="/public/images/CV_Adrien_TAFITASOA.pdf"
+                    href={cv}
                     title="Download CV"
-                    target="_blank"
                   >
                     Télécharger mon CV
                   </a>
