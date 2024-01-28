@@ -52,7 +52,7 @@ const FeaturedArea = () => {
             <div>
               <div className="featuredCap relative w-full ml-[1.5rem] mt-10 md:mt-0">
                 <span className="bg-dark2 opacity-[.07] w-[6.25rem] h-[6.25rem] md:w-[12.5rem] md:h-[12.5rem] absolute rounded-full z-[-1] top-[-2.5rem] md:top-[-5rem]"></span>
-                <h3 className="font-normal text-[1.5rem] sm:text-[1.5rem] md:text-[1.875rem] lg:text-[2rem] xl:text-[2rem] font-Caveat text-white uppercase leading-none">
+                <h3 className="font-normal text-[1.5rem] sm:text-[1.5rem] md:text-[1.875rem] lg:text-[2rem] xl:text-[2rem] font-Poppins text-white uppercase leading-none">
                   Bonjour, Je suis
                 </h3>
                 <h2 className="font-bold text-[2.3rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[4rem] font-Poppins text-white uppercase">

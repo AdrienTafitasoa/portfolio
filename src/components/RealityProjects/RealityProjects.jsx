@@ -35,14 +35,11 @@ const RealityProjects = () => {
       });
       setProjects(newProjects);
     }
-    
-  }, [item]);
-
-  useEffect(()=>{
     if(isInView){
       scrollBar("projetrealise");
     }
-  },[isInView])
+  }, [item, isInView]);
+
   const handleClick = (e, index) => {
     setItem({ filterItem: e.target.textContent.toLowerCase() });
     setActive(index);
