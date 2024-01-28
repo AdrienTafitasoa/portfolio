@@ -86,7 +86,7 @@ const FeaturedArea = () => {
                   </p>
                   <a
                     className="bg-white text-accent text-[1rem] font-Poppins font-bold uppercase rounded-[5px] md:rounded-[10px] md:px-6 lg:px-10 xl:px-11 px-7 md:py-[1.125rem] py-[14px] hover:bg-accent hover:text-white text-center inline-block"
-                    href={cv}
+                    href={cv} target="_blank"
                     title="Download CV"
                   >
                     Télécharger mon CV
