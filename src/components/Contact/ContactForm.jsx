@@ -28,7 +28,7 @@ const ContactForm = () => {
           </div>
           <div className="fieldBox w-full">
             <label className="text-[1.2rem] text-[#232A60] font-Poppins font-bold px-[10px] md:px-[1.125rem] mb-[10px] block">
-              Votre Nom
+              Nom
             </label>
             <input
               type="text" name="user_name"
@@ -37,7 +37,7 @@ const ContactForm = () => {
           </div>
           <div className="fieldBox w-full">
             <label className="text-[1.2rem] text-[#232A60] font-Poppins font-bold px-[10px] md:px-[1.125rem] mb-[10px] block">
-              Votre Email
+              Email
             </label>
             <input
               type="email" name="user_email"

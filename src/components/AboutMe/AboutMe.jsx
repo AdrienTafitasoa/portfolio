@@ -13,7 +13,7 @@ const AboutMe = () => {
   const isInView = useInView(ref);
   const mainControls = useAnimation();
   useEffect(()=>{
-    console.log("Abaout", isInView)
+    // console.log("Abaout", isInView)
     if(isInView){
       mainControls.start("visible");
       scrollBar("apropos")
@@ -70,27 +70,27 @@ const AboutMe = () => {
                     className="aboutCapBg bg-white opacity-90 opc8 absolute rounded-in sm:rounded-[7px] md:rounded-[7px] inset-0 bg-no-repeat bg-center bg-cover z-[-1]"
                     style={{ backgroundImage: `url(${PatternImg2})` }}
                   ></div>
-                  <h3 className="text-accent2 font-light text-[1.5rem] md:text-[1.875rem] leading-tight font-Poppins">
+                  <h3 className="text-accent2 font-light text-[1rem] md:text-[1.875rem] leading-tight font-Poppins">
                     
                   </h3>
                   <h4 className="text-accent2 font-light text-[1.325rem] md:text-[1.5rem] leading-normal font-Poppins">
                     Je m'appelle{" "}
-                    <span className="text-accent font-bold text-[1.5rem] md:text-[1.875rem]">
+                    <span className="text-accent font-bold text-[1rem] md:text-[1.875rem]">
                       Adrien Robinson
                     </span>
                   </h4>
                   <ul className="grid grid-cols-1 gap-5 mt-6">
-                    <li className="grid grid-cols-3 gap-4 text-[1rem] md:text-[1.125rem]">
+                    <li className="grid grid-cols-3 gap-4 text-[.9rem] md:text-[1.125rem]">
                       <strong className="text-desc3 uppercase font-bold font-Poppins col-span-1">
-                        Age:
+                        Age
                       </strong>
                       <span className="text-desc2 font-semibold font-NunitoSans col-span-2">
                         24
                       </span>
                     </li>
-                    <li className="grid grid-cols-3 gap-4 text-[1rem] md:text-[1.125rem]">
+                    <li className="grid grid-cols-3 gap-4 text-[.9rem] md:text-[1.125rem]">
                       <strong className="text-desc3 uppercase font-bold font-Poppins col-span-1">
-                        Tel:
+                        Tel
                       </strong>
                       <span className="text-desc2 font-semibold font-NunitoSans col-span-2">
                         <span
@@ -101,9 +101,9 @@ const AboutMe = () => {
                         </span>
                       </span>
                     </li>
-                    <li className="grid grid-cols-3 gap-4 text-[1rem] md:text-[1.125rem]">
+                    <li className="grid grid-cols-3 gap-4 text-[.9rem] md:text-[1.125rem]">
                       <strong className="text-desc3 uppercase font-bold font-Poppins col-span-1">
-                        Email:
+                        Email
                       </strong>
                       <span className="text-desc2 font-semibold font-NunitoSans col-span-2">
                         <a
@@ -115,17 +115,17 @@ const AboutMe = () => {
                         </a>
                       </span>
                     </li>
-                    <li className="grid grid-cols-3 gap-4 text-[1rem] md:text-[1.125rem]">
+                    <li className="grid grid-cols-3 gap-4 text-[.9rem] md:text-[1.125rem]">
                       <strong className="text-desc3 uppercase font-bold font-Poppins col-span-1">
-                        Adresse:
+                        Adresse
                       </strong>
                       <span className="text-desc2 font-semibold font-NunitoSans col-span-2">
                         Lot III R Tsarafaritra Tsimbazaza
                       </span>
                     </li>
-                    <li className="grid grid-cols-3 gap-4 text-[1rem] md:text-[1.125rem]">
+                    <li className="grid grid-cols-3 gap-4 text-[.9rem] md:text-[1.125rem]">
                       <strong className="text-desc3 uppercase font-bold font-Poppins col-span-1">
-                        Langage Prefere:
+                        Langage Prefere
                       </strong>
                       <span className="text-desc2 font-semibold font-NunitoSans col-span-2  flex items-center">
                         JavaScript

@@ -51,14 +51,14 @@ const FeaturedArea = () => {
               </div>
             </div>
             <div>
-              <div className="featuredCap relative w-full ml-[1.5rem] mt-10 md:mt-0">
+              <div className="featuredCap relative w-full md:ml-[8rem] mt-10 md:mt-0">
                 <span className="bg-dark2 opacity-[.07] w-[6.25rem] h-[6.25rem] md:w-[12.5rem] md:h-[12.5rem] absolute rounded-full z-[-1] top-[-2.5rem] md:top-[-5rem]"></span>
                 <h3 className="font-normal text-[1.5rem] sm:text-[1.5rem] md:text-[1.875rem] lg:text-[2rem] xl:text-[2rem] font-Poppins text-white uppercase leading-none">
                   Bonjour, Je suis
                 </h3>
-                <h2 className="font-bold text-[2.3rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[4rem] font-Poppins text-white uppercase">
+                <h2 className="font-bold text-[2.3rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[3.5rem] font-Poppins text-white uppercase">
                   Adrien
-                  <span className="font-normal text-[2.3rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[4rem] text-accent font-Poppins uppercase">{" "}
+                  <span className="font-normal text-[2.3rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem] xl:text-[3.5rem] text-accent font-Poppins uppercase">{" "}
                     Robinson
                   </span>
                 </h2>
@@ -79,7 +79,7 @@ const FeaturedArea = () => {
                     // to="/"
                     title="Hire Me"
                   >
-                    <FiChevronRight className="bg-accent text-white rounded-[5px] md:rounded-[10px] w-9 h-[3.5rem] md:w-11 md:h-[4.375rem] p-2"></FiChevronRight>
+                    <FiChevronRight className="bg-accent text-white rounded-[5px] md:rounded-[10px] w-9 h-[3.5rem] md:w-11 md:h-[4.375rem]  p-2"></FiChevronRight>
                     <span className="font-bold font-Poppins underline underline-offset-8">
                       
                     </span>

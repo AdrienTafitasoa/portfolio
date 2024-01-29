@@ -35,7 +35,7 @@ const Header = () => {
           </div>
           {/* Topbar */}
         </div>
-        <div className="menuWrap hidden lg:flex flex-col items-center justify-between fixed left-[3.4375rem] top-[5.625rem] bottom-[5.625rem] border-2 border-solid border-accent rounded-full z-[9999] w-[6.25rem] px-5 py-[3.125rem]">
+        <div className="menuWrap hidden lg:flex flex-col items-center justify-between fixed left-[3.4375rem] top-[5.625rem] bottom-[5.625rem] border-2 border-solid border-accent rounded-full z-[9999] w-[6.25rem] md:h-[32rem] px-5 py-[3.125rem]">
           <div className="flex flex-col items-center justify-center gap-8 menuInner">
             <SocialLinks/>
             <span className="h-[2.5rem] sm:h-[3rem] md:h-[5.625rem] bg-accent w-[1px]"></span>

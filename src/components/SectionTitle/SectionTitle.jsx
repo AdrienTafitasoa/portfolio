@@ -4,7 +4,7 @@ const SectionTitle = ({title,titleInner, desc}) => {
         <div className="secTitle max-w-[100%] md:max-w-[90%] lg:max-w-[55%]">
           <h2 className="text-accent2 text-[1.875rem] md:text-[3.125rem] font-Poppins font-bold relative">
             <i className="h-[3.5rem] w-[3.5rem] md:h-[5.625rem] md:w-[5.625rem] rounded-[10px] md:rounded-[1.25rem] absolute ml-[-1.75rem] md:ml-[-2.8125rem] left-1/2 bg-shapBg z-[-1] top-[-12%] md:top-[-15%]"></i>
-            {title} <span className="text-accent text-[1.875rem] md:text-[3.125rem] font-Caveat font-bold relative">
+            {title} <span className="text-accent text-[1.875rem] md:text-[3.125rem] font-Poppins font-bold relative">
               {titleInner}
             </span>
           </h2>

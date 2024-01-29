@@ -11,7 +11,7 @@ const Parcours = () => {
   const isInView = useInView(ref);
   const mainControls = useAnimation();
   useEffect(()=>{
-    console.log(isInView)
+    // console.log(isInView)
     if(isInView){
       mainControls.start("visible");
       scrollBar("parcours");

@@ -61,7 +61,7 @@ const RealityProjects = () => {
           desc=""
         ></SectionTitle>
         <div className="pageInner grid gap-10 md:gap-20 grid-cols-1 w-full">
-          <ul className="filterList flex flex-wrap justify-center items-center">
+          <ul className="filterList flex flex-wrap justify-center items-center gap-3">
             {filterList.map(
               (item, index) =>
                 (
@@ -69,7 +69,7 @@ const RealityProjects = () => {
                     key={index}
                     className={`${
                       active === index ? "active" : ""
-                    } group flex items-center justify-center font-Poppins font-semibold text-[1rem] md:text-[1.25rem] text-accent2 py-[12px] px-[1.375rem] gap-2 relative hover:pr-11 hover:bg-accent hover:text-white rounded-[5px] md:rounded-[10px] cursor-pointer transition-all ease-linear`}
+                    } group flex items-center justify-center font-Poppins font-semibold text-[1rem] md:text-[1.25rem] text-accent2 py-[12px] px-[1.375rem] gap-2 relative hover:bg-accent hover:text-white rounded-[5px] md:rounded-[10px] cursor-pointer transition-all ease-linear`}
                     onClick={(e) => {
                       handleClick(e, index);
                     }}
@@ -132,7 +132,7 @@ const RealityProjects = () => {
       >
         <div className="relative w-auto my-6 mx-auto max-w-3xl">
           {/*content*/}
-          <div className="border-0 w-[800px] rounded-lg shadow-lg relative flex flex-col  bg-white outline-none focus:outline-none">
+          <div className="border-0 w-full rounded-lg shadow-lg relative flex flex-col  bg-white outline-none focus:outline-none">
             {/*header*/}
             <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
               <h3 className="text-3xl font-semibold">

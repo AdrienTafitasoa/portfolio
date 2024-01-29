@@ -378,7 +378,7 @@ nav ul ul,
   height: auto;
 } */
 #header .anchor_nav li.current a{
-  color: #0D112A;
+  color: #284be5;
 }
 /*=== Mirror ===*/
 .mirror {
@@ -403,7 +403,7 @@ nav ul ul,
 .filterList > li.active {
   background-color: var(--accentColor);
   color: var(--white);
-  padding-right: 2.75rem;
+  /* padding-right: 2.75rem; */
 }
 .filterList > li.active svg {opacity: 1;}
 
