@@ -8,7 +8,7 @@ import Shape4 from "../../assets/images/shape/shape-4.png";
 import { useEffect, useRef } from "react";
 import { useInView} from "framer-motion";
 import { scrollBar } from "../Header/scroll";
-import cv from "../../assets/images/ressources/CV_Adrien_TAFITASOA.pdf"
+import cv from "../../assets/images/ressources/CV_Adrien.pdf"
 const FeaturedArea = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
