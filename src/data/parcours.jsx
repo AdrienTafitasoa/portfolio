@@ -28,6 +28,6 @@ export const parcours = [
     descColor: "text-[#070815]",
     servIcon: <img className="h-[7rem] w-[4.9rem] fill-white" src={inclusiv}/>,
     servTitle: "Website Development",
-    servDesc: "J'ai suivi une formation professionnelle pour me reconvertir dans le domaine de la Technologie.",
+    servDesc: "J'ai suivi une formation professionnelle pour me reconvertir dans le domaine Infomatiques.",
   },
 ];

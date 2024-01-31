@@ -135,7 +135,7 @@ const RealityProjects = () => {
           <div className="border-0 w-full rounded-lg shadow-lg relative flex flex-col  bg-white outline-none focus:outline-none">
             {/*header*/}
             <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-              <h3 className="text-3xl font-semibold">
+              <h3 className="text-3xl font-semibold text-accent">
               {selectedProject.portTitle}
               </h3>
             </div>
@@ -144,10 +144,10 @@ const RealityProjects = () => {
               <p className="my-4 text-blueGray-500 font-Poppins text-lg leading-relaxed">
                 {selectedProject.description}
               </p>
-              <p className="my-4  font-Poppins text-lg leading-relaxed">
+              <p className="my-4 font-Poppins text-lg leading-relaxed italic">
                 {selectedProject.portSubTitle}
               </p>
-              <p className="my-4  font-Poppins text-lg leading-relaxed">
+              <p className="my-4 font-Poppins text-lg text-[#60A5FA] underline leading-relaxed">
                 <a href={selectedProject.codeSource} target="_blank">
                   Code Source
                 </a>
@@ -155,7 +155,7 @@ const RealityProjects = () => {
             </div>
             
             {/*footer*/}
-            <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+            <div className="flex items-center justify-end p-4 border-t border-solid border-blueGray-200 rounded-b">
               
               <button
                 className="bg-white text-accent text-[1rem] font-Poppins font-bold uppercase rounded-[3px] md:rounded-[3px] md:px-[5px] lg:px-[10px] xl:px-[10px] px-[5px] md:py-[5px] py-[14px] hover:bg-accent hover:text-white text-center inline-block"

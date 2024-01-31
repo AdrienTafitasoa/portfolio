@@ -67,7 +67,7 @@ const FeaturedArea = () => {
                   Développeur Fulstack
                 </h5>
                 <p className="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] lg:text-[1.25rem] xl:text-[1.375rem] text-[#070815] md:leading-9 sm:leading-7 leading-6 w-full md:w-full lg:w-full xl:w-3/4 mt-6">
-                  Je suis un scientifique passionée dans le monde de
+                  Je suis un scientifique passioné dans le monde de
                   développement de logiciel Web et Desktop.
                 </p>
                 <p className="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] lg:text-[1.25rem] xl:text-[1.375rem] text-[#070815] md:leading-9 sm:leading-7 leading-6 w-full md:w-full lg:w-full xl:w-3/4 mt-4">

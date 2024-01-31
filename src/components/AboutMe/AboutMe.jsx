@@ -73,7 +73,7 @@ const AboutMe = () => {
                   <h3 className="text-accent2 font-light text-[1rem] md:text-[1.875rem] leading-tight font-Poppins">
                     
                   </h3>
-                  <h4 className="text-accent2 font-light text-[1.325rem] md:text-[1.5rem] leading-normal font-Poppins">
+                  <h4 className="text-accent2 font-light text-[1rem] md:text-[1.7rem] leading-normal font-Poppins">
                     Je m'appelle{" "}
                     <span className="text-accent font-bold text-[1rem] md:text-[1.875rem]">
                       Adrien Robinson
