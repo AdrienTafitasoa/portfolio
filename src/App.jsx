@@ -6,7 +6,7 @@ import ProjectDetail from './pages/ProjectDetails/ProjectDetail';
 function App() {
 const router = createBrowserRouter([
   {
-    path:"/",
+    path:"/portfolio",
     element:<Portfolio/>
   },
   {
