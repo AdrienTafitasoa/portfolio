@@ -19,7 +19,7 @@ export const projectsRealty = [
     id: 2,
     portBox: "basis-full md:basis-[58.3%] px-[.9375rem]",
     portImg: ProjectImg2,
-    portTitle: "Anuaire Electroniques",
+    portTitle: "Annuaire Electronique",
     portSubTitle: "Développer en Java et JavaFX",
     portcate: "Desktop",
     description : "Application gestionnaire d'étudiants.",

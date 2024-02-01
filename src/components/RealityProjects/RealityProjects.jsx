@@ -57,7 +57,7 @@ const RealityProjects = () => {
       <div className="container sm:container md:container lg:container xl:max-w-[73.125rem] mx-auto">
       <SectionTitle
           title="Mes Projets"
-          titleInner=" Réalisée"
+          titleInner=" Réalisés"
           desc=""
         ></SectionTitle>
         <div className="pageInner grid gap-10 md:gap-20 grid-cols-1 w-full">
@@ -128,7 +128,7 @@ const RealityProjects = () => {
       {/* Modal pour afficher les détails du projet sélectionné */}
       {selectedProject && (
         <div
-        className="justify-center items-center flex overflow-x-hidden bg-[#070815]/90 backdrop-blur-sm overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+        className="justify-center items-center flex overflow-x-hidden bg-[#070815]/90 backdrop-blur-sm transition-all ease-in-out duration-300 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
       >
         <div className="relative w-auto my-6 mx-auto max-w-3xl">
           {/*content*/}
