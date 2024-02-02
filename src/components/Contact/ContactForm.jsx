@@ -11,7 +11,7 @@ const ContactForm = () => {
     , 'GQmUoqH8qRtHyJvpd')
       .then((result) => {
           console.log(result.text);
-          console.log("Email sent");
+          alert("Message envoyé");
           e.target.reset();
       }, (error) => {
           console.log(error.text);
