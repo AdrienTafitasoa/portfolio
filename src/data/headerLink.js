@@ -22,7 +22,7 @@ export const headerLink =[
     {
         id:5,
         href:"#projetrealise",
-        title : "Projet Réalisée"
+        title : "Projet Réalisé"
     },
     {
         id:6,

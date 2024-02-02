@@ -67,11 +67,11 @@ const FeaturedArea = () => {
                   Développeur Fulstack
                 </h5>
                 <p className="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] lg:text-[1.25rem] xl:text-[1.375rem] text-[#070815] md:leading-9 sm:leading-7 leading-6 w-full md:w-full lg:w-full xl:w-3/4 mt-6">
-                  Je suis un scientifique passioné dans le monde de
-                  développement de logiciel Web et Desktop.
+                  Je suis un scientifique passionné dans le monde de
+                  développement de logiciels Web et Desktop.
                 </p>
                 <p className="text-[1rem] sm:text-[1.125rem] md:text-[1.25rem] lg:text-[1.25rem] xl:text-[1.375rem] text-[#070815] md:leading-9 sm:leading-7 leading-6 w-full md:w-full lg:w-full xl:w-3/4 mt-4">
-                  J'aime bien travailler avec JavaScript et Java pour le côté back-end, mais je peux aussi adapter avec d'autres Langages Informatiques.
+                  J'excelle dans l'utilisation de JavaScript et Java pour le côté back-end. Cependant, ma flexibilité me permet de m'adapter aisément à d'autres langages informatiques
                 </p>
                 <div className="flex items-center md:justify-start justify-center sm:gap-8 md:gap-10 lg:gap-15 xl:gap-20 gap-8 md:mt-[3.125rem] mt-[1.875rem]">
                   <p
