@@ -2,7 +2,7 @@ import bacc from "../lib/icons/Certificate.png";
 import licence from "../lib/icons/Mortarboard.svg";
 import inclusiv from "../lib/icons/logo-inclusiv.png";
 
-export const parcours = [
+export const educations = [
   {
     id: 1,
     bgColor: "bg-[#93C5FD]",

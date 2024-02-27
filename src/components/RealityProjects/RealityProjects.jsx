@@ -3,7 +3,6 @@ import { motion, useInView } from "framer-motion";
 import { projectsRealty } from "../../data/projects";
 import SectionTitle from "../SectionTitle/SectionTitle"
 import RightDownIcon from "../../lib/icons/RightDown.svg";
-import { scrollBar } from "../Header/scroll";
 
 const filterList = [
   {
@@ -43,9 +42,6 @@ const RealityProjects = () => {
       });
       setProjects(newProjects);
     }
-    if(isInView){
-      scrollBar("projetrealise");
-    }
   }, [item, isInView]);
 
   const handleClick = (e, index) => {
@@ -53,7 +49,7 @@ const RealityProjects = () => {
     setActive(index);
   };
   return (
-    <section id="projetrealise" ref={ref} className="pageWrap pt-20 pb-[6.875rem] relative w-full">
+    <section id="projects" ref={ref} className="pageWrap portfolio_section pt-20 pb-[6.875rem] relative w-full">
       <div className="container sm:container md:container lg:container xl:max-w-[73.125rem] mx-auto">
       <SectionTitle
           title="Mes Projets"

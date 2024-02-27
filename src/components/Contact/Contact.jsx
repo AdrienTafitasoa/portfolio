@@ -4,18 +4,16 @@ import ContactInfo from "./ContactInfo";
 import ContactSocial from "./ContactSocial";
 import { useEffect, useRef } from "react";
 import { useInView} from "framer-motion";
-import { scrollBar } from "../Header/scroll";
 
 const Contact = ()=>{
   const ref = useRef(null);
   const isInView = useInView(ref);
   useEffect(()=>{
     if(isInView){
-      scrollBar("contact");
     }
   },[isInView]);
     return(
-        <section id="contact" ref={ref} className="contactUsWrap py-[4.5rem] md:py-[5.5rem] lg:py-[2rem] xl:py-[2rem] relative w-full">
+        <section id="contact" ref={ref} className="contactUsWrap portfolio_section py-[4.5rem] md:py-[5.5rem] lg:py-[2rem] xl:py-[2rem] relative w-full">
       <div
         className="fixedBg bg-center bg-no-repeat before:absolute before:z-[1] before:inset-0 before:opacity-90 before:bg-[#60A5FA] bgGrident1 bg-blend-hard-light overflow-hidden"
       ></div>

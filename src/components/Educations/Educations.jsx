@@ -1,37 +1,34 @@
 import PatternImg from "../../assets/images/ressources/patternImg3.jpg";
 import PatternImg2 from "../../assets/images/ressources/patternImg2.jpg";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import { parcours } from "../../data/parcours";
+import { educations } from "../../data/educations";
 import { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
-import { scrollBar } from "../Header/scroll";
 
-const Parcours = () => {
+const Educations = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   const mainControls = useAnimation();
   useEffect(()=>{
-    // console.log(isInView)
     if(isInView){
       mainControls.start("visible");
-      scrollBar("parcours");
     }
   },[isInView]);
   return (
-    <section id="parcours" className="servicesWrap py-[4.5rem] md:pt-[5.5rem] lg:py-[2rem] xl:py-[2rem] pb-[4.5rem] md:pb-[5.5rem] lg:pb-[6.25rem] relative w-full">
+    <section id="education" className="servicesWrap portfolio_section py-[4.5rem] md:pt-[5.5rem] lg:py-[2rem] xl:py-[2rem] pb-[4.5rem] md:pb-[5.5rem] lg:pb-[6.25rem] relative w-full">
       <div
         className="fixedBg bg-right-top bg-no-repeat opacity-20 top-0 sm:top-0 md:top-0 lg:top-[-7.5rem]"
         style={{ backgroundImage: `url(${PatternImg})` }}
       ></div>
-      <div className="container sm:container md:container lg:container xl:max-w-[75rem] mx-auto">
+      <div ref={ref} className="container sm:container md:container lg:container xl:max-w-[75rem] mx-auto">
         <SectionTitle
           title="Ma Formation"
           titleInner="Académiques"
           desc=""
         ></SectionTitle>
         <div className="servicesBoxes relative w-full">
-          <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.875rem]">
-            {parcours.map(
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.875rem]">
+            {educations.map(
               (item, index) =>
               (
                   <motion.div className="gridItem" key={index}
@@ -77,4 +74,4 @@ const Parcours = () => {
   );
 };
 
-export default Parcours;
+export default Educations;

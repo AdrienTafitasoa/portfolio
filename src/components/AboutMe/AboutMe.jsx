@@ -5,7 +5,6 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import AboutImg from "../../assets/images/ressources/IMG_3062.jpg";
 import { useEffect, useRef } from "react";
 import {motion, useInView, useAnimation} from "framer-motion";
-import { scrollBar } from "../Header/scroll";
 
 const AboutMe = () => {
   
@@ -13,14 +12,12 @@ const AboutMe = () => {
   const isInView = useInView(ref);
   const mainControls = useAnimation();
   useEffect(()=>{
-    // console.log("Abaout", isInView)
     if(isInView){
       mainControls.start("visible");
-      scrollBar("apropos")
     }
   },[isInView]);
   return (
-    <section id="apropos" className="aboutUsWrap py-[4.5rem] md:py-[5.5rem] lg:py-[2rem] xl:py-[2rem] relative w-full">
+    <section id="about" ref={ref} className="aboutUsWrap portfolio_section py-[4.5rem] md:py-[5.5rem] lg:py-[2rem] xl:py-[2rem] relative w-full">
       <div
         className="fixedBg bg-left-top bg-no-repeat opacity-20"
         style={{ backgroundImage: `url(${PatternImg})` }}
@@ -31,7 +28,7 @@ const AboutMe = () => {
           titleInner="Moi"
           desc=""
         ></SectionTitle>
-        <div ref={ref} className="aboutUs relative w-full p-[1.25rem] lg:p-[1.875rem] mt-[5.9375rem]">
+        <div className="aboutUs relative w-full p-[1.25rem] lg:p-[1.875rem] mt-[5.9375rem]">
           <div
             className="aboutUsBg before:absolute before:inset-0 before:bg-gray before:rounded-[7px] before:sm:rounded-[7px] before:md:rounded-[7px] before:opacity-70 before:z-[1] bg-gray bg-blend-multiply absolute rounded-[7px] sm:rounded-[7px] md:rounded-[7px] inset-0 left-0 lg:left-[10.9375rem] bg-no-repeat bg-center bg-cover"
             style={{ backgroundImage: `url(${AboutUsBg})` }}

@@ -4,21 +4,18 @@ import PatternImg from "../../assets/images/ressources/patternImg.jpg";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
-import { scrollBar } from "../Header/scroll";
 
-const Competences = () => {
+const Skills = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   const mainControls = useAnimation();
   useEffect(() => {
-    // console.log(isInView);
     if (isInView) {
       mainControls.start("visible");
-      scrollBar("competences")
     }
   }, [isInView]);
   return (
-    <section id="competences" ref={ref} className="servicesWrap py-[4.5rem] md:pt-[5.5rem] lg:py-[2rem] xl:py-[2rem] pb-[4.5rem] md:pb-[5.5rem] lg:pb-[6.25rem] relative w-full">
+    <section id="skills" ref={ref} className="servicesWrap portfolio_section py-[4.5rem] md:pt-[5.5rem] lg:py-[2rem] xl:py-[2rem] pb-[4.5rem] md:pb-[5.5rem] lg:pb-[6.25rem] relative w-full">
       <div
         className="fixedBg bg-left-top bg-no-repeat opacity-20"
         style={{ backgroundImage: `url(${PatternImg})` }}
@@ -31,9 +28,9 @@ const Competences = () => {
             desc=""
           ></SectionTitle>
           {/* <SectionTitleIcon title="Skills"></SectionTitleIcon> */}
-          <div ref={ref} className="skillsList grid grid-cols-1 sm:grid-cols-2 relative w-full">
+          <div  className="skillsList grid grid-cols-1 sm:grid-cols-2 relative w-full">
             {skills.map((item, index) => (
-              <div className={item.skillBox} key={index}>
+              <div ref={ref} className={item.skillBox} key={index}>
                 <motion.span
                   className="bg-white rounded-[10px] h-[4.375rem] w-[4.375rem] inline-flex items-center justify-center"
                   whileHover={{ scale: 1.3 }}
@@ -73,4 +70,4 @@ const Competences = () => {
   );
 };
 
-export default Competences;
+export default Skills;

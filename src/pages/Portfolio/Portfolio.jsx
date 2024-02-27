@@ -1,19 +1,24 @@
+import { useEffect } from "react";
 import AboutMe from "../../components/AboutMe/AboutMe";
-import Competences from "../../components/Competences/Competences";
+import Skills from "../../components/Skills/Skills";
 import Contact from "../../components/Contact/Contact";
 import FeaturedArea from "../../components/FeaturedArea/FeaturedArea";
 import Header from "../../components/Header/Header";
-import Parcours from "../../components/Parcours/Parcours";
+import Educations from "../../components/Educations/Educations";
 import RealityProjects from "../../components/RealityProjects/RealityProjects";
+import { scrollNav } from "../../components/Header/scroll";
 
 const Portfolio = ()=>{
+    useEffect(()=>{
+        window.addEventListener("scroll", scrollNav);
+    },[]);
     return(
         <>
             <Header/>
             <FeaturedArea/>
             <AboutMe/>
-            <Parcours/>
-            <Competences/>
+            <Educations/>
+            <Skills/>
             <RealityProjects/>
             <Contact/>
         </>

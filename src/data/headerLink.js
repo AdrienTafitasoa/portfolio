@@ -6,22 +6,22 @@ export const headerLink =[
     },
     {
         id:2,
-        href:"#apropos",
+        href:"#about",
         title : "A Propos"
     },
     {
         id:3,
-        href:"#parcours",
+        href:"#education",
         title : "Parcours"
     },
     {
         id:4,
-        href:"#competences",
+        href:"#skills",
         title : "Compétences"
     },
     {
         id:5,
-        href:"#projetrealise",
+        href:"#projects",
         title : "Projet Réalisé"
     },
     {
