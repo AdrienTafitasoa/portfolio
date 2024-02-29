@@ -34,6 +34,7 @@ const FeaturedArea = () => {
                       className="rounded-full relative z-[1] max-w-full"
                       src={PhotoProfil}
                       alt=""
+                      loading="lazy"
                     ></img>
                     {/* Featured Image */}
                   </div>

@@ -48,6 +48,7 @@ const AboutMe = () => {
                   className="rounded-[7px] sm:rounded-[7px] md:rounded-[7px] relative z-[1] w-full"
                   src={AboutImg}
                   alt=""
+                  loading="lazy"
                 ></img>
                 {/* About Image */}
               </div>

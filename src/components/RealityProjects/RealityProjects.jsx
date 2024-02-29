@@ -92,6 +92,7 @@ const RealityProjects = () => {
                     >
                       <img
                         className="w-full"
+                        loading="lazy"
                         src={item.portImg}
                         alt={item.portTitle}
                       ></img>
